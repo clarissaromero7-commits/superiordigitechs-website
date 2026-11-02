@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Superior Digi-Techs | Smart City Field Tech Services</title>
+<meta name="description" content="Superior Digi-Techs delivers expert field services for smart waste systems, IoT deployments, network installations, and municipal & residential projects across the Northeast, Florida, and Utah.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22%2342a0f5%22%20stroke%3D%22%2342a0f5%22%3E%3Cg%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22M50%2010V90M10%2050H90M23%2023L77%2077M77%2023L23%2077%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2212%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%229%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2291%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2291%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#132235; --navy-2:#1a2f48; --navy-3:#23415f;
+  --blue:#42a0f5; --blue-d:#1f7fd6;
+  --orange:#ff7a1a; --orange-d:#e5620a; --orange-soft:#fff1e6;
+  --ink:#132235; --text:#3a4a5c; --muted:#66778b; --line:#e3e9f0; --bg:#ffffff; --soft:#f3f7fc;
+  --radius:16px; --shadow:0 14px 34px rgba(19,34,53,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:Montserrat,sans-serif;color:var(--ink);line-height:1.15;text-wrap:balance}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:Montserrat;font-weight:800;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-d)}
+.eyebrow::before{content:"";width:22px;height:3px;border-radius:2px;background:var(--orange)}
+section{padding:92px 0}
+.section-head{max-width:740px;margin-bottom:46px}
+.section-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:12px 0 14px}
+.section-head p{font-size:1.07rem;color:var(--muted)}
+.hl{color:var(--orange)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:Montserrat;font-weight:700;font-size:.95rem;padding:15px 28px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(255,122,26,.35)}
+.btn-orange:hover{background:var(--orange-d)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-3)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy-2),var(--navy-3))}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+
+/* TOP BAR + NAV */
+.topbar{background:var(--orange);color:#fff;font-size:.86rem;font-weight:600;text-align:center;padding:8px 16px}
+.topbar a{text-decoration:underline}
+header{position:sticky;top:0;z-index:50;background:rgba(19,34,53,.97);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff}
+.brand img{width:42px;height:42px}
+.brand b{font-family:Montserrat;font-weight:800;font-size:1.05rem;letter-spacing:.02em;line-height:1.05;display:block}
+.brand small{display:block;font-family:Montserrat;font-weight:700;font-size:.56rem;letter-spacing:.2em;color:var(--blue)}
+.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+.nav ul a{color:#cfdbe8;font-weight:500;font-size:.93rem}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:10px 20px;font-size:.88rem;color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+
+/* HERO */
+.hero{position:relative;color:#fff;padding:0;background:var(--navy);overflow:hidden}
+.hero>.ph{position:absolute;inset:0}
+.hero>.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(19,34,53,.97) 0%,rgba(19,34,53,.86) 42%,rgba(19,34,53,.35) 100%)}
+.hero-glow{position:absolute;width:520px;height:520px;right:-120px;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(255,122,26,.45),transparent 65%);pointer-events:none}
+.hero-inner{position:relative;padding:104px 20px 96px}
+.hero .eyebrow{color:#ffb27a}
+.hero h1{color:#fff;font-size:clamp(2.4rem,5.6vw,4.2rem);font-weight:900;max-width:780px;margin:18px 0 20px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--orange),#ffb067);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.16rem;color:#d5e1ee;max-width:640px;margin-bottom:34px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:flex;gap:16px;margin-top:56px;flex-wrap:wrap}
+.stats div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 22px;backdrop-filter:blur(4px)}
+.stats b{display:block;font-family:Montserrat;font-size:2rem;font-weight:900;color:var(--orange);line-height:1.1}
+.stats span{color:#c4d3e3;font-size:.88rem}
+
+/* TICKER */
+.ticker{background:var(--navy-2);color:#fff;overflow:hidden;white-space:nowrap;border-top:3px solid var(--orange)}
+.ticker-track{display:inline-flex;gap:44px;padding:16px 0;animation:tick 38s linear infinite;font-family:Montserrat;font-weight:700;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase}
+.ticker-track span::before{content:"◆";color:var(--orange);margin-right:44px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* EXPLAIN */
+.explain{background:var(--soft)}
+.explain-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center}
+.explain h2{font-size:clamp(1.7rem,3.2vw,2.4rem);margin:12px 0 16px}
+.explain p{margin-bottom:14px}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.who div{background:#fff;border-radius:var(--radius);padding:20px;border-top:4px solid var(--blue);box-shadow:0 6px 18px rgba(19,34,53,.06)}
+.who div:nth-child(2),.who div:nth-child(3){border-top-color:var(--orange)}
+.who h4{font-size:1rem;margin-bottom:6px}
+.who p{font-size:.9rem;color:var(--muted);margin:0}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .2s}
+.svc:hover{transform:translateY(-4px)}
+.svc:hover img{transform:scale(1.06)}
+.svc .ph{height:180px}
+.svc .body{padding:20px 20px 24px}
+.svc .num{font-family:Montserrat;font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-d)}
+.svc h3{font-size:1.08rem;margin:8px 0 10px}
+.svc p{font-size:.93rem}
+.svc.new{border:2px solid var(--orange)}
+.svc .tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--orange);color:#fff;font-family:Montserrat;font-weight:800;font-size:.7rem;letter-spacing:.1em;padding:5px 10px;border-radius:999px}
+
+/* APP */
+.app{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 60%,#2a2238 100%);color:#cfdbe8;position:relative;overflow:hidden}
+.app::before{content:"";position:absolute;width:600px;height:600px;left:-220px;top:-260px;border-radius:50%;background:radial-gradient(circle,rgba(66,160,245,.25),transparent 65%)}
+.app-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.app h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.8rem);margin:12px 0 16px}
+.app .eyebrow{color:#ffb27a}
+.app p.lead{font-size:1.07rem;margin-bottom:24px;color:#c4d3e3}
+.app .tagline{font-family:Montserrat;font-weight:700;font-size:1.22rem;line-height:1.4;color:#fff;margin-bottom:16px;border-left:4px solid var(--orange);padding-left:16px}
+.app .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fgrid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:72px}
+.fcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:24px;transition:border-color .2s,transform .2s}
+.fcard:hover{border-color:var(--orange);transform:translateY(-3px)}
+.fic{width:46px;height:46px;border-radius:12px;background:rgba(255,122,26,.16);display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}
+.fcard h3{color:#fff;font-size:1.06rem;margin-bottom:10px}
+.fcard ul{list-style:none;display:grid;gap:8px}
+.fcard li{position:relative;padding-left:18px;font-size:.9rem;color:#b9c9da;line-height:1.5}
+.fcard li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.who-for{position:relative;margin-top:34px;background:linear-gradient(90deg,rgba(255,122,26,.16),rgba(66,160,245,.12));border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:26px 28px;display:grid;grid-template-columns:.9fr 1.6fr;gap:24px;align-items:center}
+.who-for h3{color:#fff;font-size:1.15rem;margin-bottom:4px}
+.who-for p{font-size:.92rem;color:#c4d3e3}
+.wf-chips{display:flex;flex-wrap:wrap;gap:8px}
+.wf-chips span{background:rgba(255,255,255,.1);color:#fff;border-radius:999px;padding:7px 14px;font-size:.86rem;font-weight:600}
+
+/* NETWORKS */
+.net-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.net-imgs{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:200px 200px;gap:14px}
+.net-imgs .ph{border-radius:var(--radius)}
+.net-imgs .ph:first-child{grid-row:span 2}
+.net h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:12px 0 16px}
+.net ul{list-style:none;display:grid;gap:10px;margin:20px 0 24px}
+.net li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+.net li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--orange-soft);color:var(--orange-d);display:grid;place-items:center;font-weight:800;font-size:.8rem;margin-top:1px}
+.ne{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.ne span{background:var(--navy);color:#fff;border-radius:999px;padding:7px 15px;font-size:.85rem;font-weight:600}
+
+/* HOW */
+.how{background:var(--soft)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:0 6px 18px rgba(19,34,53,.06);position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--orange);color:#fff;font-family:Montserrat;font-weight:900;font-size:1.15rem;margin-bottom:16px;box-shadow:0 6px 16px rgba(255,122,26,.35)}
+.step h3{font-size:1.05rem;margin-bottom:8px}
+.step p{font-size:.92rem}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{position:relative}
+.about-img .ph{border-radius:20px;height:480px}
+.badge{position:absolute;right:-18px;bottom:-22px;background:var(--orange);color:#fff;border-radius:18px;padding:22px 26px;box-shadow:var(--shadow);max-width:210px}
+.badge b{font-family:Montserrat;font-size:2.4rem;font-weight:900;display:block;line-height:1}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:12px 0 18px}
+.about p{margin-bottom:14px}
+.coverage{margin-top:22px}
+.coverage h4{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--orange-soft);border:1px solid #ffd9bd;border-radius:999px;padding:6px 14px;font-size:.87rem;font-weight:600;color:var(--ink)}
+
+/* PARTNER */
+.partner{background:var(--navy);color:#cfdbe8}
+.partner h2,.partner h3{color:#fff}
+.partner .section-head p{color:#9fb4ca}
+.partner .eyebrow{color:#ffb27a}
+.partner-top{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;margin-bottom:40px}
+.partner-top .section-head{margin:0}
+.partner-top .ph{border-radius:var(--radius);height:230px}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.p-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:26px;transition:border-color .2s,transform .2s}
+.p-card:hover{border-color:var(--orange);transform:translateY(-3px)}
+.p-card .ico{font-size:1.7rem;margin-bottom:12px}
+.p-card h3{font-size:1.06rem;margin-bottom:8px}
+.p-card p{font-size:.93rem}
+.partner-cta{margin-top:34px;background:linear-gradient(90deg,var(--orange),#ff9a4a);border-radius:var(--radius);padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.partner-cta p{color:#fff;font-weight:700;font-family:Montserrat;font-size:1.05rem}
+.partner-cta .btn{background:#fff;color:var(--orange-d)}
+
+/* INDUSTRIES */
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ind{position:relative;border-radius:var(--radius);overflow:hidden;height:200px;color:#fff}
+.ind .ph{position:absolute;inset:0}
+.ind:hover img{transform:scale(1.07)}
+.ind::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(19,34,53,.05) 30%,rgba(19,34,53,.9))}
+.ind h3{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:#fff;font-size:1rem}
+.ind h3 span{display:block;font-size:1.4rem;margin-bottom:4px}
+
+/* READY */
+.ready{background:linear-gradient(110deg,var(--orange-d),var(--orange) 55%,#ffa860);color:#fff;padding:66px 0}
+.ready .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.ready h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:6px}
+.ready p{color:#fff4ea;font-size:1.05rem}
+.ready .btn{background:var(--navy);color:#fff}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px}
+.contact h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin:12px 0 16px}
+.contact p{margin-bottom:14px}
+.info{display:grid;gap:14px;margin-top:24px}
+.info div{display:flex;gap:14px;align-items:flex-start}
+.info .i{width:44px;height:44px;border-radius:12px;background:var(--orange-soft);display:grid;place-items:center;font-size:1.1rem;flex:none}
+.info b{display:block;color:var(--ink);font-size:.92rem}
+.info span{font-size:.95rem}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);background:var(--soft);border-bottom:1px solid var(--line)}
+.tabs button{border:0;background:none;padding:18px 8px;font-family:Montserrat;font-weight:700;font-size:.86rem;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent}
+.tabs button.on{color:var(--ink);background:#fff;border-bottom-color:var(--orange)}
+form{padding:26px 28px 30px;display:none}
+form.on{display:block}
+.form-intro{font-size:.93rem;color:var(--muted);margin-bottom:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:.84rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+.f{margin-bottom:14px}
+input,select,textarea{width:100%;font:inherit;font-size:.95rem;padding:12px 14px;border:1px solid #cdd7e2;border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);border-color:transparent}
+textarea{min-height:104px;resize:vertical}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+.checks label{display:flex;align-items:center;gap:8px;font-weight:500;font-size:.9rem;margin:0}
+.checks input{width:auto;accent-color:var(--orange)}
+.hp{position:absolute;left:-9999px}
+form .btn{width:100%;justify-content:center;margin-top:6px}
+.msg{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;font-size:.93rem}
+.msg.ok{background:#e7f6ec;color:#17643a}
+.msg.err{background:#fdecec;color:#9b1c1c}
+
+/* FOOTER */
+footer{background:var(--navy);color:#9fb4ca;padding:64px 0 28px;border-top:4px solid var(--orange)}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px;font-size:.93rem}
+footer a:hover{color:var(--orange)}
+footer .brand{margin-bottom:14px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.86rem}
+
+@media (max-width:1060px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .p-grid,.fgrid{grid-template-columns:1fr 1fr}
+  .who-for{grid-template-columns:1fr}
+  .steps,.ind-grid{grid-template-columns:1fr 1fr}
+  .about-grid,.contact-grid,.explain-grid,.partner-top,.app-grid,.net-grid{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .badge{right:12px}
+  .app-visual{margin-bottom:30px}
+  .app-visual .float{left:12px}
+}
+@media (max-width:760px){
+  section{padding:66px 0}
+  .nav ul{display:none;position:absolute;top:74px;left:0;right:0;background:var(--navy);flex-direction:column;padding:18px 20px 24px;gap:16px;align-items:flex-start}
+  .nav ul.open{display:flex}
+  .burger{display:block}
+  .svc-grid,.p-grid,.steps,.who,.row,.checks,.foot,.fgrid,.who-for{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:1fr 1fr}
+  .ind{height:150px}
+  .about-img .ph{height:320px}
+  .app-visual .main{height:280px}
+  .app-visual .float{height:120px}
+  .net-imgs{grid-template-rows:150px 150px}
+  .tabs button{font-size:.76rem;padding:14px 4px}
+  form{padding:22px 18px 24px}
+}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">Now offering the <a href="#app">Superior Digitech Field Service App</a> &amp; network installations across New England</div>
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="brand"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22%2342a0f5%22%20stroke%3D%22%2342a0f5%22%3E%3Cg%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22M50%2010V90M10%2050H90M23%2023L77%2077M77%2023L23%2077%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2212%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%229%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2291%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2291%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3C/svg%3E" alt="Superior Digi-Techs Logo"><span><b>SUPERIOR<br>DIGI-TECHS</b><small>SMART CITY TECH SOLUTIONS</small></span></a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#app">Field Service App</a></li>
+      <li><a href="#networks">Networks</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#partner">Partners</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#contact" class="btn btn-orange" data-tab="job">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="ph"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=75" alt="Field technicians at work on a project site"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Field Services Experts — Est. 10+ Years</div>
+    <h1>Trusted Field <em>Tech Services</em> Built to Scale</h1>
+    <p class="lead">Superior Digi-Techs delivers expert field services for smart waste systems, IoT deployments, and municipal &amp; residential projects across the Northeast, Florida, and Utah.</p>
+    <div class="ctas">
+      <a href="#contact" class="btn btn-orange" data-tab="job">Get a Quote →</a>
+      <a href="#services" class="btn btn-ghost">Our Services</a>
+      <a href="#contact" class="btn btn-ghost" data-tab="partner">Become a Partner</a>
+    </div>
+    <div class="stats">
+      <div><b>10+</b><span>Years Experience</span></div>
+      <div><b>8</b><span>States Covered</span></div>
+      <div><b>8</b><span>Core Services</span></div>
+      <div><b>1</b><span>Field Service App</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>Smart Bin Installs</span><span>Power Washing</span><span>Vinyl Wraps</span><span>IoT Devices</span><span>Technician Dispatch</span><span>Network Setup</span><span>Field Service App</span><span>Home Improvement</span>
+  <span>Smart Bin Installs</span><span>Power Washing</span><span>Vinyl Wraps</span><span>IoT Devices</span><span>Technician Dispatch</span><span>Network Setup</span><span>Field Service App</span><span>Home Improvement</span>
+</div></div>
+
+<!-- WHAT WE DO, SIMPLY PUT -->
+<section class="explain">
+  <div class="wrap explain-grid">
+    <div>
+      <div class="eyebrow">What We Do, Simply Put</div>
+      <h2>We're the boots on the ground for <span class="hl">smart city technology.</span></h2>
+      <p>Cities, campuses and technology companies are installing more connected equipment every year: solar-powered trash compactors, sensors, kiosks, networks and monitoring devices. All of it has to be installed, connected, cleaned, repaired and kept running out in the field.</p>
+      <p><strong>That's our job.</strong> You send us the work order, we send a trained, local technician to the site, get it done right, and report back with photos. You never have to hire, travel or manage a field crew yourself.</p>
+      <p>And if you run your own field team, our <strong>Superior Digitech Field Service App</strong> is your team’s command center for finding, fixing and maintaining equipment, with AI guidance and live updates at every step.</p>
+    </div>
+    <div class="who">
+      <div><h4>🏙️ Municipalities</h4><p>Keep public bins, kiosks and street tech clean, connected and working.</p></div>
+      <div><h4>📡 Tech Vendors &amp; Integrators</h4><p>Get reliable local install and repair coverage under your brand.</p></div>
+      <div><h4>📱 Field Service Businesses</h4><p>Map assets, route crews and fix faster with AI guidance.</p></div>
+      <div><h4>🏠 Homeowners</h4><p>Flooring, fencing, plumbing, electrical and handyman work done right.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What We Do</div>
+      <h2>Our Core Services</h2>
+      <p>From smart bin installations to white-label dispatch, we bring over a decade of hands-on technical expertise to every project.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=70" alt="Smart waste bin installation"></div>
+        <div class="body"><div class="num">01 — Smart Waste</div><h3>Smart Bin Installations &amp; Repairs</h3><p>We install and service solar-powered waste stations, compactors, sensors, batteries, and all hardware components.</p></div>
+      </article>
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1718152521364-b9655b8a7926?auto=format&fit=crop&w=800&q=70" alt="Power washing and cleaning"></div>
+        <div class="body"><div class="num">02 — Cleaning</div><h3>Cleaning &amp; Power Washing</h3><p>Regular or on-demand deep cleaning for smart bins, transit equipment, and public-space hardware.</p></div>
+      </article>
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://lh3.googleusercontent.com/sitesv/AA5AbUCcp6yDNvRwqbG-CMid22yUZ09yGebfWZmd6UZkipg4IiB3oL4Iyje1NpK4jN1chKPLXYO3iK4owO_Q6IcsbxKkBrThO1jF4YqgGKmWSk57F10eaM4zEzfyLh58v1WmkjyxWPuy7W2EP52O9eD_QJBMKjJM6ShFMJA93AAmbJIf0cXxDsQnsccNP-ysVxO3oeI1SoHE5rpPCOV4vxMyxATAo3g52H39k15P7Dk=w1280" data-fb="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=800&q=70" alt="Vinyl wrap installation"></div>
+        <div class="body"><div class="num">03 — Branding</div><h3>Vinyl Wrap Installations</h3><p>Professional vinyl wrap installation for bins, kiosks, cabinets, and smart city equipment.</p></div>
+      </article>
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=800&q=70" alt="IoT device installation"></div>
+        <div class="body"><div class="num">04 — IoT</div><h3>IoT Device Installations</h3><p>Installation and maintenance of sensors, telemetry units, solar components, and environmental monitoring technology.</p></div>
+      </article>
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=70" alt="Technician dispatching"></div>
+        <div class="body"><div class="num">05 — Dispatch</div><h3>Technician Dispatching</h3><p>White-label technician services for vendors and integrators who need reliable local coverage.</p></div>
+      </article>
+      <article class="svc">
+        <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=70" alt="Home improvement installation"></div>
+        <div class="body"><div class="num">06 — Residential</div><h3>Home Improvement Installations</h3><p>Flooring, fencing, plumbing, electrical, and handyman services for residential properties.</p></div>
+      </article>
+      <article class="svc new">
+        <div class="ph"><span class="tag">NEW ENGLAND</span><img loading="lazy" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=70" alt="Network cabling installation"></div>
+        <div class="body"><div class="num">07 — Networks</div><h3>Network Setup &amp; Installations</h3><p>We set up and install networks all over New England, from cabling and Wi-Fi to the gateways that connect smart devices.</p></div>
+      </article>
+      <article class="svc new">
+        <div class="ph"><span class="tag">SOFTWARE</span><img loading="lazy" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=70" alt="Field service app on phone and laptop"></div>
+        <div class="body"><div class="num">08 — Software</div><h3>Superior Digitech Field Service App</h3><p>Your field team’s command center for finding, fixing, and maintaining equipment, with AI guidance and live updates at every step. Available to any business with field operations.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD SERVICE APP -->
+<section class="app" id="app">
+  <div class="wrap">
+    <div class="app-grid">
+      <div class="app-visual">
+        <span class="app-badge">AI-Powered</span>
+        <div class="ph main"><img loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1100&q=70" alt="Field service dashboard with live equipment data"></div>
+        <div class="ph float"><img loading="lazy" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=70" alt="Technician using the app on a phone"></div>
+      </div>
+      <div>
+        <div class="eyebrow">For Your Business</div>
+        <h2>The Superior Digitech <span class="hl">Field Service App</span></h2>
+        <p class="tagline">Your field team’s command center for finding, fixing, and maintaining equipment, with AI guidance and live updates at every step.</p>
+        <p class="lead">We offer our field service app to businesses that need help with their field service operations. It's the same platform built around the work our own technicians do every day.</p>
+        <div class="ctas"><a href="#contact" class="btn btn-orange" data-tab="app">Request an App Demo →</a><a href="#app-features" class="btn btn-ghost">See All Features</a></div>
+      </div>
+    </div>
+
+    <div class="fgrid" id="app-features">
+        <div class="fcard"><div class="fic">🗺️</div><h3>Smart Asset Map</h3><ul><li>See every piece of equipment on one live map using GPS locations</li><li>Color-coded status shows what needs attention now: repairs, cleanings, or routine service</li><li>Tap any asset to see its location, service history, and current condition</li></ul></div>
+        <div class="fcard"><div class="fic">🧭</div><h3>Automated Route Planning</h3><ul><li>Builds the most efficient route through each day’s jobs automatically</li><li>Turn-by-turn directions to every site</li><li>Routes update when priorities change or urgent jobs come in</li></ul></div>
+        <div class="fcard"><div class="fic">🤖</div><h3>AI-Powered Repair &amp; Assembly Guides</h3><ul><li>Step-by-step instructions for diagnosing, repairing, and assembling equipment on site</li><li>Techs can ask questions in plain language and get answers right away</li><li>Fewer return visits, faster fixes, and quicker onboarding for new technicians</li></ul></div>
+        <div class="fcard"><div class="fic">📋</div><h3>Work Order Management</h3><ul><li>Create, assign, and track jobs from dispatch to completion</li><li>Covers every job type: repairs, cleanings, preventive maintenance, and large projects</li><li>Checklists keep work consistent across the whole team</li></ul></div>
+        <div class="fcard"><div class="fic">📸</div><h3>Live Job Updates &amp; Proof of Work</h3><ul><li>Techs mark jobs as started, in progress, and complete from their phone</li><li>Add photos, notes, and parts used to every job</li><li>Managers and clients see progress in real time, with no calls or emails needed</li></ul></div>
+        <div class="fcard"><div class="fic">📡</div><h3>Real-Time Equipment Data</h3><ul><li>Connects to sensor or IoT data where available, so alerts, diagnostics, and status come straight from the equipment</li><li>Automatic alerts flag issues before they become problems</li></ul></div>
+        <div class="fcard"><div class="fic">📊</div><h3>Reporting &amp; Analytics</h3><ul><li>Dashboards for jobs completed, response times, technician performance, and recurring problem assets</li><li>Export reports to share with leadership or clients</li></ul></div>
+        <div class="fcard"><div class="fic">🔗</div><h3>Integrations</h3><ul><li>Connects to your existing equipment management software, CRM, or city and facility systems through an API</li></ul></div>
+        <div class="fcard"><div class="fic">📱</div><h3>Built for the Field</h3><ul><li>Mobile-first design that works on any phone or tablet</li><li>Simple enough to learn in minutes</li></ul></div>
+    </div>
+
+    <div class="who-for">
+      <div><h3>Who it’s for</h3><p>Any company that maintains equipment spread across many locations, such as:</p></div>
+      <div class="wf-chips"><span>Smart City Infrastructure</span><span>Kiosks &amp; Vending</span><span>EV Chargers</span><span>HVAC</span><span>Telecom</span><span>Signage</span><span>Utilities</span><span>Facilities Management</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORKS -->
+<section class="net" id="networks">
+  <div class="wrap net-grid">
+    <div>
+      <div class="eyebrow">Network Installations</div>
+      <h2>We Set Up Networks <span class="hl">All Over New England</span></h2>
+      <p>Smart equipment is only as good as the network behind it. Our technicians plan, install and test the networks that keep devices, buildings and sites connected, so everything works on day one and keeps working.</p>
+      <ul>
+        <li>Network cabling, racks and equipment installation</li>
+        <li>Wi-Fi and wireless access point setup</li>
+        <li>Gateways and connectivity for smart city and IoT devices</li>
+        <li>Testing, troubleshooting and ongoing network maintenance</li>
+      </ul>
+      <div class="ne"><span>Massachusetts</span><span>Rhode Island</span><span>New Hampshire</span><span>Connecticut</span><span>Vermont</span></div>
+      <a href="#contact" class="btn btn-dark" data-tab="job" data-service="Network Setup &amp; Installations">Plan a Network Install →</a>
+    </div>
+    <div class="net-imgs">
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1501979376754-2ff867a4f659?auto=format&fit=crop&w=900&q=70" alt="New England city from above"></div>
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=70" alt="Network patch panel"></div>
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=70" alt="Network equipment rack"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>From work order to done in four steps.</h2>
+      <p>Whether it's one bin or a multi-city rollout, every job follows the same simple process.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Send us the job</h3><p>Fill out the quick form below with the location, equipment and what needs to be done.</p></div>
+      <div class="step"><h3>We confirm &amp; schedule</h3><p>We reply within one business day with a quote, timeline and a dedicated point of contact.</p></div>
+      <div class="step"><h3>A local tech goes on-site</h3><p>A trained Superior Digi-Techs technician completes the install, repair, network setup or cleaning.</p></div>
+      <div class="step"><h3>You get the report</h3><p>Before-and-after photos and job notes, ready to pass to your client or your team.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img">
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1100&q=70" alt="Superior Digi-Techs field team at work"></div>
+      <div class="badge"><b>10+</b><span>Years of Field Expertise</span></div>
+    </div>
+    <div>
+      <div class="eyebrow">Who We Are</div>
+      <h2>Experienced. Dependable. Scalable.</h2>
+      <p>Superior Digi-Techs provides trusted field services for smart waste systems, IoT deployments, and residential and municipal improvement projects.</p>
+      <p>Whether it's a single-site repair or a multi-city rollout, we operate with the professionalism and precision your projects demand. We integrate seamlessly into your workflow as a white-label field arm or as your direct service provider.</p>
+      <div class="coverage">
+        <h4>Coverage Area</h4>
+        <div class="chips"><span>Massachusetts</span><span>Rhode Island</span><span>New Hampshire</span><span>Connecticut</span><span>Vermont</span><span>New York City</span><span>Florida</span><span>Utah</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section class="partner" id="partner">
+  <div class="wrap">
+    <div class="partner-top">
+      <div class="section-head">
+        <div class="eyebrow">Work With Us</div>
+        <h2>Partner With Us</h2>
+        <p>We operate independently and can dispatch our own technicians for your projects.</p>
+      </div>
+      <div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1000&q=70" alt="Partnership handshake"></div>
+    </div>
+    <div class="p-grid">
+      <div class="p-card"><div class="ico">🌆</div><h3>Multi-City Deployments</h3><p>We manage large-scale rollouts across multiple markets, coordinating logistics and technicians so you don't have to.</p></div>
+      <div class="p-card"><div class="ico">🔧</div><h3>Maintenance Programs</h3><p>Ongoing service agreements to keep your equipment running. Scheduled visits, rapid response, and detailed reporting.</p></div>
+      <div class="p-card"><div class="ico">🤝</div><h3>White-Label Installation</h3><p>We work under your brand. Your clients see your company name; we deliver the skilled field work behind the scenes.</p></div>
+      <div class="p-card"><div class="ico">⚡</div><h3>Emergency Service Calls</h3><p>When equipment fails unexpectedly, we mobilize fast. Rapid dispatch and proven diagnostics minimize downtime.</p></div>
+      <div class="p-card"><div class="ico">🍂</div><h3>Seasonal Cleaning Programs</h3><p>Comprehensive cleaning contracts for public bins, kiosks, and infrastructure—scheduled around your operational calendar.</p></div>
+      <div class="p-card"><div class="ico">🏠</div><h3>Home Improvement Projects</h3><p>Residential installations handled with the same professional standard as our commercial deployments.</p></div>
+    </div>
+    <div class="partner-cta">
+      <p>Vendor, integrator, municipality or property manager? Signing up takes about 2 minutes.</p>
+      <a href="#contact" class="btn" data-tab="partner">Become a Partner →</a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Who We Serve</div>
+      <h2>Industries We Support</h2>
+      <p>Our technicians are trained across multiple sectors, ready to support complex deployments in demanding environments.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>🏙️</span>Smart City Technology</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>♻️</span>Municipal Waste &amp; Recycling</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>✈️</span>Airports &amp; Transit</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>🎓</span>Universities &amp; Campuses</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>📡</span>Smart Sensors &amp; IoT Vendors</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>🏢</span>Facilities &amp; Property Management</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>🏠</span>Home Improvement</h3></div>
+      <div class="ind"><div class="ph"><img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=65" alt=""></div><h3><span>📱</span>Field Service Businesses</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- READY -->
+<section class="ready">
+  <div class="wrap">
+    <div><h2>Ready to Deploy?</h2><p>Let's talk about your next project. We'll get back to you within one business day.</p></div>
+    <a href="#contact" class="btn" data-tab="job">Contact Us Today →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Let's Work Together</h2>
+      <p>Ready to start a project or want to learn more? Reach out and our team will respond within one business day.</p>
+      <p>Whether you're a municipality, a smart city vendor, or a homeowner — we're ready to help. Tell us about your project and we'll get back to you quickly.</p>
+      <div class="info">
+        <div><span class="i">📍</span><span><b>Service Area</b>MA, RI, NH, CT, VT, NYC, FL, UT</span></div>
+        <div><span class="i">✉️</span><span><b>Email</b><a href="mailto:superiordigitechs@gmail.com">superiordigitechs@gmail.com</a></span></div>
+        <div><span class="i">🌐</span><span><b>Website</b>superiordigitechs.com</span></div>
+        <div><span class="i">⏱️</span><span><b>Response Time</b>Within 1 business day</span></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="tabs">
+        <button type="button" class="on" data-show="job">Request a Job</button>
+        <button type="button" data-show="partner">Become a Partner</button>
+        <button type="button" data-show="app">App Demo</button>
+      </div>
+
+      <!-- JOB REQUEST -->
+      <form id="f-job" class="on" data-subject="🛠️ New Job Request — Superior Digi-Techs website">
+        <p class="form-intro">Tell us about the work. This goes straight to our dispatch inbox.</p>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="Form" value="Job Request">
+        <div class="row">
+          <div class="f"><label for="j-name">Full Name *</label><input id="j-name" name="Name" required></div>
+          <div class="f"><label for="j-co">Company / Organization</label><input id="j-co" name="Company"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="j-email">Email *</label><input id="j-email" type="email" name="email" required></div>
+          <div class="f"><label for="j-phone">Phone *</label><input id="j-phone" type="tel" name="Phone" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="j-svc">Service Needed *</label>
+            <select id="j-svc" name="Service" required>
+              <option value="">Select a Service</option>
+              <option>Smart Bin Installations &amp; Repairs</option>
+              <option>Cleaning &amp; Power Washing</option>
+              <option>Vinyl Wrap Installations</option>
+              <option>IoT Device Installations</option>
+              <option>Technician Dispatching</option>
+              <option>Home Improvement Installations</option>
+              <option>Network Setup &amp; Installations</option>
+              <option>Superior Digitech Field Service App</option>
+              <option>Partnership Inquiry</option>
+            </select></div>
+          <div class="f"><label for="j-loc">Job Location (City, State) *</label><input id="j-loc" name="Location" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="j-units">How many units / sites?</label><input id="j-units" name="Units / Sites" placeholder="e.g. 12 bins, 3 sites"></div>
+          <div class="f"><label for="j-time">Timeline</label>
+            <select id="j-time" name="Timeline"><option>Emergency — ASAP</option><option>Within 1–2 weeks</option><option selected>Within the month</option><option>Ongoing / recurring</option><option>Just getting a quote</option></select></div>
+        </div>
+        <div class="f"><label for="j-det">Job Details *</label><textarea id="j-det" name="Details" required placeholder="Equipment, what needs to be done, site access notes…"></textarea></div>
+        <button class="btn btn-orange" type="submit">Send Job Request →</button>
+        <div class="msg ok">✓ Message sent! We'll be in touch within one business day.</div>
+        <div class="msg err">Something went wrong. Please email us directly at superiordigitechs@gmail.com</div>
+      </form>
+
+      <!-- PARTNER SIGN-UP -->
+      <form id="f-partner" data-subject="🤝 New Partner Sign-Up — Superior Digi-Techs website">
+        <p class="form-intro">Partner with us for white-label installs, maintenance programs or multi-city rollouts. We'll follow up with next steps within one business day.</p>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="Form" value="Partner Sign-Up">
+        <div class="row">
+          <div class="f"><label for="p-name">Full Name *</label><input id="p-name" name="Name" required></div>
+          <div class="f"><label for="p-co">Company *</label><input id="p-co" name="Company" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="p-email">Email *</label><input id="p-email" type="email" name="email" required></div>
+          <div class="f"><label for="p-phone">Phone *</label><input id="p-phone" type="tel" name="Phone" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="p-type">I am a… *</label>
+            <select id="p-type" name="Partner Type" required>
+              <option value="">Select one</option>
+              <option>Smart city / IoT vendor</option>
+              <option>Systems integrator</option>
+              <option>Municipality / public agency</option>
+              <option>University / campus</option>
+              <option>Airport / transit authority</option>
+              <option>Facilities / property management</option>
+              <option>Other</option>
+            </select></div>
+          <div class="f"><label for="p-web">Company Website</label><input id="p-web" name="Website" placeholder="https://"></div>
+        </div>
+        <div class="f"><label>How would you like to work together?</label>
+          <div class="checks">
+            <label><input type="checkbox" name="Interest" value="Multi-City Deployments"> Multi-City Deployments</label>
+            <label><input type="checkbox" name="Interest" value="Maintenance Programs"> Maintenance Programs</label>
+            <label><input type="checkbox" name="Interest" value="White-Label Installation"> White-Label Installation</label>
+            <label><input type="checkbox" name="Interest" value="Emergency Service Calls"> Emergency Service Calls</label>
+            <label><input type="checkbox" name="Interest" value="Seasonal Cleaning Programs"> Seasonal Cleaning Programs</label>
+            <label><input type="checkbox" name="Interest" value="Network Installations"> Network Installations</label>
+          </div>
+        </div>
+        <div class="f"><label for="p-mkt">Markets you need covered</label><input id="p-mkt" name="Markets" placeholder="e.g. Boston, NYC, Orlando, Salt Lake City"></div>
+        <div class="f"><label for="p-notes">Anything else?</label><textarea id="p-notes" name="Notes" placeholder="Equipment types, expected volume, start date…"></textarea></div>
+        <button class="btn btn-orange" type="submit">Become a Partner →</button>
+        <div class="msg ok">✓ Thanks for signing up! We'll be in touch within one business day.</div>
+        <div class="msg err">Something went wrong. Please email us directly at superiordigitechs@gmail.com</div>
+      </form>
+
+      <!-- APP DEMO -->
+      <form id="f-app" data-subject="📱 Field Service App Demo Request — Superior Digi-Techs website">
+        <p class="form-intro">See how the Superior Digitech Field Service App can become your field team’s command center. We'll reach out to set up a demo.</p>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="Form" value="App Demo Request">
+        <div class="row">
+          <div class="f"><label for="a-name">Full Name *</label><input id="a-name" name="Name" required></div>
+          <div class="f"><label for="a-co">Company *</label><input id="a-co" name="Company" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="a-email">Email *</label><input id="a-email" type="email" name="email" required></div>
+          <div class="f"><label for="a-phone">Phone *</label><input id="a-phone" type="tel" name="Phone" required></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="a-ind">Type of Business</label><input id="a-ind" name="Business Type" placeholder="e.g. EV chargers, HVAC, kiosks, telecom"></div>
+          <div class="f"><label for="a-size">Field Team Size</label>
+            <select id="a-size" name="Team Size"><option>1–5 techs</option><option>6–15 techs</option><option>16–50 techs</option><option>50+ techs</option></select></div>
+        </div>
+        <div class="f"><label for="a-notes">What do you need help with?</label><textarea id="a-notes" name="Needs" placeholder="Asset mapping, route planning, work orders, AI repair guides, reporting…"></textarea></div>
+        <button class="btn btn-orange" type="submit">Request a Demo →</button>
+        <div class="msg ok">✓ Request received! We'll contact you within one business day to set up your demo.</div>
+        <div class="msg err">Something went wrong. Please email us directly at superiordigitechs@gmail.com</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#home" class="brand"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20fill%3D%22%2342a0f5%22%20stroke%3D%22%2342a0f5%22%3E%3Cg%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22M50%2010V90M10%2050H90M23%2023L77%2077M77%2023L23%2077%22/%3E%3C/g%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2212%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%229%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2291%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2291%22%20cy%3D%2250%22%20r%3D%229%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2222%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2222%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2278%22%20r%3D%226.5%22/%3E%3C/svg%3E" alt=""><span><b>SUPERIOR<br>DIGI-TECHS</b><small>SMART CITY TECH SOLUTIONS</small></span></a>
+        <p>Trusted field services for smart waste systems, IoT deployments, and residential &amp; municipal projects. Over a decade of hands-on technical experience.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="#services">Smart Bin Installations</a></li><li><a href="#services">Cleaning &amp; Power Washing</a></li><li><a href="#services">Vinyl Wrap Installations</a></li><li><a href="#services">IoT Device Installations</a></li><li><a href="#services">Technician Dispatching</a></li><li><a href="#services">Home Improvement</a></li><li><a href="#networks">Network Installations</a></li><li><a href="#app">Field Service App</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="#about">About Us</a></li><li><a href="#partner">Partner With Us</a></li><li><a href="#industries">Industries</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© <span id="yr">2026</span> Superior Digi-Techs. All rights reserved.</span><span>Serving MA · RI · NH · CT · VT · NYC · FL · UT</span></div>
+  </div>
+</footer>
+
+<script>
+// Every form submission is emailed to this inbox (via FormSubmit.co)
+var INBOX = "superiordigitechs@gmail.com";
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Photo fallback
+document.querySelectorAll('.ph img').forEach(function(img){
+  img.addEventListener('error', function(){
+    if (img.dataset.fb && !img.dataset.used) { img.dataset.used = 1; img.src = img.dataset.fb; }
+    else { img.style.display = 'none'; }
+  });
+});
+
+// Tabs
+function showTab(which){
+  document.querySelectorAll('.tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.show === which); });
+  ['job','partner','app'].forEach(function(k){ document.getElementById('f-' + k).classList.toggle('on', k === which); });
+}
+document.querySelectorAll('.tabs button').forEach(function(b){ b.addEventListener('click', function(){ showTab(b.dataset.show); }); });
+document.querySelectorAll('[data-tab]').forEach(function(a){ a.addEventListener('click', function(){
+  showTab(a.dataset.tab);
+  if (a.dataset.service) { document.getElementById('j-svc').value = a.dataset.service; }
+}); });
+document.querySelectorAll('#menu a').forEach(function(a){ a.addEventListener('click', function(){ document.getElementById('menu').classList.remove('open'); }); });
+
+// Submit → email
+document.querySelectorAll('form').forEach(function(form){
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var ok = form.querySelector('.msg.ok'), err = form.querySelector('.msg.err'), btn = form.querySelector('button[type=submit]');
+    ok.style.display = err.style.display = 'none';
+    var data = {};
+    new FormData(form).forEach(function(v,k){ data[k] = data[k] ? data[k] + ', ' + v : v; });
+    if (data._honey) return;
+    delete data._honey;
+    data._subject = form.dataset.subject;
+    data._template = 'table';
+    data._replyto = data.email;
+    var label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending…';
+    fetch('https://formsubmit.co/ajax/' + INBOX, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(data)
+    }).then(function(r){ return r.json(); }).then(function(res){
+      if (String(res.success) === 'true') { ok.style.display = 'block'; form.reset(); }
+      else { throw new Error(res.message || 'failed'); }
+    }).catch(function(){ err.style.display = 'block'; })
+      .finally(function(){ btn.disabled = false; btn.textContent = label; });
+  });
+});
+</script>
+</body>
+</html>
